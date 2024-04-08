@@ -15,3 +15,7 @@ Resources:
 
    [Youtube -  How to use gabs](https://www.youtube.com/watch?v=76aORU14cyY&ab_channel=GoLangBeginners)
 
+## Tools
+   [Gore - Golang REPL (read–eval–print loop) ](https://github.com/x-motemen/gore)
+
+
