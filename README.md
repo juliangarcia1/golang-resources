@@ -1,7 +1,10 @@
 # golang-resources
 
 ## Basics
-   []()
+   [Golang Tutorial : Go Full Course - 3:49 hrs](https://www.youtube.com/watch?v=YzLrWHZa-Kc&ab_channel=DerekBanas)
+
+## Advanced
+   [TBD]()
 
 ## Testing
 Resources:
@@ -13,7 +16,7 @@ Resources:
 ## Miscelanous
    [Gabs library - Managing (updating) JSON dynamically library](https://github.com/Jeffail/gabs)
 
-   [Youtube -  How to use gabs](https://www.youtube.com/watch?v=76aORU14cyY&ab_channel=GoLangBeginners)
+   [Youtube -  How to use Gabs](https://www.youtube.com/watch?v=76aORU14cyY&ab_channel=GoLangBeginners)
 
 ## Tools
    [Gore - Golang REPL (read–eval–print loop) ](https://github.com/x-motemen/gore)
