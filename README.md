@@ -5,7 +5,9 @@
 
 ## Advanced
    [Common Errors](https://100go.co/)
+
    [Effective Go](https://golang.org/doc/effective_go.html)
+   
    [Reviews](https://go.dev/wiki/CodeReviewComments)
 
 ## Style Guide
