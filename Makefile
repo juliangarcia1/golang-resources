@@ -72,6 +72,7 @@ create-lambda-zip:
 	zip $(build_folder)/$(build_name) $(build_folder)/main.go
 	rm $(build_folder)/main.go
 
+# Create a lambda function
 function_name = TestFunction
 create-lambda-function:
 	aws lambda create-function \
@@ -85,3 +86,7 @@ create-lambda-function:
 # Create a docker-compose file with localstack using echo
 create-docker-compose:
 	echo "version: '3'\n\nservices:\n  localstack:\n    image: localstack/localstack\n    ports:\n      - \"4566-4599:4566-4599\"\n    environment:\n      - SERVICES=sqs,dynamodb,lambda\n      - DOCKER_HOST=unix:///var/run/docker.sock\n      - LAMBDA_EXECUTOR=docker\n      - LOCALSTACK_HOSTNAME=localstack" > docker-compose.yml
+
+compare-json:
+	@echo "Comparing JSON files"
+	@diff -u <(jq --sort-keys . $(file1)) <(jq --sort-keys . $(file2)) || true
