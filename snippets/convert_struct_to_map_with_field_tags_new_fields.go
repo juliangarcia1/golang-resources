@@ -50,7 +50,19 @@ func CreateMapFromStruct(input interface{}) (map[string]interface{}, error) {
 
 	return result, nil
 }
-
+// main, expected ouput:
+// {
+// 	"Age": 30,
+// 	"Description": "A sample struct",
+// 	"Name": "John",
+// 	"Name_flag": true,
+// 	"Sub": {
+// 	  "SubAddress": "123 Main St",
+// 	  "SubAge": 20,
+// 	  "SubName": "SubJohn",
+// 	  "SubName_flag": true
+// 	}
+//   }
 func main() {
 	example := ExampleStruct{
 		Name:        "John",
