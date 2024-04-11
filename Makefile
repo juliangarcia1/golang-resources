@@ -38,7 +38,7 @@ create-mocks:
 # When local libraries are not working properly or 
 # corrupted or modified by hand or for testing purposes
 reset-go-libraries: 
-	go clean modcache
+	go clean --modcache
 	go mod tidy
 	# After this you need to restart/reload your IDE
 	# go mod vendor
