@@ -90,3 +90,8 @@ create-docker-compose:
 compare-json:
 	@echo "Comparing JSON files"
 	@diff -u <(jq --sort-keys . $(file1)) <(jq --sort-keys . $(file2)) || true
+
+
+create-mocks-with-mockgen:
+	mockgen -source=internal/repositories/database.go -destination=internal/repositories/mock_database.go -package=repositories
+	mockgen -source=internal/app/app.go -destination=internal/app/mock_app.go -package=app
